@@ -1,0 +1,2 @@
+# SMART_IRRIGATION_AICTE_SHELL_INTERNSHIP
+This is an AICTE Shell Internship code
