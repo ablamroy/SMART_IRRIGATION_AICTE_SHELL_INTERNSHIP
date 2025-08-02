@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib  
 
-# 🌿 Introductory Content 
+# Introductory Content 
 st.set_page_config(page_title="Smart Sprinkler System", layout="centered")
 st.title("🌾 Smart Sprinkler System")
 st.markdown("""
