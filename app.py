@@ -8,23 +8,13 @@ st.title("🌾 Smart Sprinkler System")
 st.markdown("""
 Welcome to the **AI-powered Smart Sprinkler System** demo!  
 This tool helps you simulate smart irrigation decisions using machine learning based on 20 sensor readings from a farm field.
+Each sensor input is expected to be **scaled between 0 and 1**, where:
 
-Each sensor slider below lets you simulate environmental values like:
-- 🌡️ Soil Temperature
-- 💧 Moisture Level
-- 🌫️ Humidity
-- ☀️ Sunlight Exposure
+- `0.0` → low reading (e.g., very dry soil)
+- `1.0` → high reading (e.g., fully moist soil)
 
+**Try adjusting the sliders below to simulate field conditions and click 'Predict Sprinklers' to see the results!**
 """)
-
-# Use-Case Scenario
-with st.expander("📌 Example Scenario: Dry Soil in Early Morning"):
-    st.markdown("""
-    - **Sensor 0–4 (Moisture):** Set to 0.1–0.3 → Dry soil  
-    - **Sensor 5–9 (Temperature):** Set to 0.3–0.4 → Morning temps  
-    - **Sensor 10–19 (Other sensors):** Set mid-range (0.4–0.6)  
-    👉 Click `Predict Sprinklers` to observe which sprinklers turn ON.
-    """)
 
 # Sidebar – Quick Reference
 st.sidebar.header("Project Info")
